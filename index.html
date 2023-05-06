@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <meta name="description" content="This Othmane Alaoui Moutarajji resume enjoy">
+    <meta name="title" content="Othmane's Resume">
+    <meta name="keywrods" content="resume, cv">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styling Start -->
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background:linear-gradient(180deg,var(--color4) 2%,var(--color1)96%);
+            color: white;
+        }
+        
+        :root {
+            --color1:#635985;
+            --color2:#443C68;
+            --color3:#393053;
+            --color4:#18122B;
+        }
+        nav {
+            width: 100%;
+            background-color: var(--color4);
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 399;
+        }
+        nav ul{
+            text-align: center;
+        }
+        nav a{
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24pt;
+            padding: 0px 5px;
+        }
+        .nav-link3 {
+            display: inline-block;
+        } 
+        .indent_list {
+            background-color: var(--color4);
+            font-size: 6em;
+            list-style-type: none;
+            display: none;
+            box-shadow: 2px 2px 12px white;
+            width: min-content;
+            z-index: -1;
+            position:  absolute;
+            top: -10px;
+        }
+        
+        .wrk {
+            padding: 20px;
+            margin: 0;
+            width: max-content;
+        }
+        
+        .nav-link3:hover > .indent_list {
+            display: block;
+        }
+        #input_text {
+            background-color: var(--color3);
+            border: none;
+            border-radius: 3px;
+            padding: 3px;
+        }
+        #input_text:focus{
+            outline: none;
+        }
+        #input_btn {
+            padding: 5px;
+            background-color: #302758;
+            border: none;
+            border-radius: 3px;
+        }
+        .about {
+            margin: 0px 20vw;
+            
+        }
+        .about h1 {
+            font-size: 6em;
+            position: relative;
+            z-index: -2;
+        }
+        .about img {
+           position: absolute;
+           right: 10vw;
+           top: 1vh;
+           left: auto;
+           z-index: -1;
+        } 
+        .about p {
+            width: 80%;
+            z-index: 99;
+        }
+        
+        .ul_social a {
+            display: inline-block;
+            margin: 20px;
+        }
+        .ul_social {
+            list-style-type: none;
+            
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            padding: 20px;
+            letter-spacing: 5px;
+            font-size: 3em;
+        }
+        .work {
+            width :100%;
+            margin: 0 2vw;
+        }
+        .ul_work {
+            list-style: none;
+            text-align: center;
+            padding: 0px 50px;
+        }
+        .ul_work a {
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: var(--color1);
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px white;
+        }
+        .work1 {
+            left: 150px;
+            z-index: 1;
+        }
+        .work2 {
+            left: 0px;
+            z-index: 2;
+        }
+        .work3 {
+            left: -150px;
+            z-index: 3;
+        }
+        .work4 {
+            left: -250px;
+            z-index: 4;
+        }
+        .ul_work a:hover{
+            transform: scale(1.05) rotate(1.2deg);
+            z-index: 99;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+        input[type="button"]{
+            cursor: pointer;
+        }
+        table {
+            margin: auto;
+        }
+        .sub_btn {
+            display: block;
+            margin: auto;
+            background-color: var(--color4);
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+            padding:15px;
+            margin: 15px auto ;
+            font-size: 1.2em;
+        }
+        #text_area{
+            background-color: var(--color3);
+            border: none;
+            border-radius: 3px;
+        }
+        footer {
+            display: inline-block;
+            background-color: var(--color4);
+            width: 100%;
+        }
+        iframe {
+            width: 300px;
+            height: 200px;
+        }
+        .copy {
+            display: block;
+            text-align: center;
+        }
+    </style>
+    <!-- Styling End -->
+</head>
+<body>
+    <header>
+        <!-- Nav Start -->
+        <!-- Navigation bar that includes links for within the same webpage -->
+        <nav>
+            <ul style="list-style-type:none;">
+                <a href="#home">
+                    <li class="nav-link1">HOME</li>
+                </a>
+                <a href="#about">
+                    <li class="nav-link2">ABOUT</li>
+                </a>
+                <a href="#work">
+                    <li class="nav-link3">WORK
+                        <!-- Indent list for drop down menu while hovering over the Work element to 
+                        get links directly to each work individualy -->
+                        <ul class="indent_list">
+                            <a href="">
+                                <li class="wrk wrk1">Work One</li>
+                            </a>
+                            <a href="">
+                                <li class="wrk wrk2">Work Two</li>
+                            </a>
+                            <a href="">
+                                <li class="wrk wrk3">Work Three</li>
+                            </a>
+                            <a href="">
+                                <li class="wrk wrk4">Work Four</li>
+                            </a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="#resume">
+                    <li class="nav-link4">RESUME</li>
+                </a>
+                <a href="#contact">
+                    <li class="nav-link5">CONTACT</li>
+                </a>
+            </ul>
+        </nav>
+        <!-- Nav End -->
+    </header>
+    <div>
+        <!-- About Section Start -->
+        <section id="about" class="about">
+            <h1>Othmane Alaoui Moutarajji</h1>
+            <ul class="ul_social">
+                <a href="">
+                    <li class="social1"><i class="fa-brands fa-github" style="color: #ffffff;"></i></li>
+                </a>
+                <a href="">
+                    <li class="social2"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
+                </a>
+                <a href="">
+                    <li class="social3"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></li>
+                </a>
+                <a href="">
+                    <li class="social4"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></li>
+                </a>
+            </ul>
+            <img src="images/Wzk18HlS_400x400-removebg-preview FINAL.png" alt="">
+            <p>As a web developer, I have a passion for designing and developing websites that not only look great but also provide a seamless user experience. With a strong foundation in HTML, CSS, and JavaScript, I enjoy creating dynamic and responsive websites that meet the needs of my clients. I am also proficient in various frameworks and content management systems, such as WordPress and Bootstrap, which allow me to create customized solutions tailored to my clients' unique needs. My portfolio showcases some of my recent projects and demonstrates my expertise in the field of web development.</p>
+        </section>
+        <!-- About Section End -->
+        <!-- Work Section Start -->
+        <section id="work" class="work">
+            <h3>My Work</h3>
+            <ul class="ul_work">
+                <a href="" class="work1">
+                    <li >Work One</li>
+                </a>
+                <a href="" class="work2">
+                    <li >Work Two</li>
+                </a>
+                <a href="" class="work3">
+                    <li >Work Three</li>
+                </a>
+                <a href="" class="work4">
+                    <li >Work Four</li>
+                </a>
+            </ul>
+        </section>
+        <!-- Work Section End -->
+        <!-- Resume Section Start -->
+        <!-- Resume section simply includes a button to download directly the Resume document -->
+        <section id="resume" class="resume">
+            <h3>My Resume</h3>
+            <i class="button fa-solid fa-download " style="color: #ffffff;"><input type="button" value="Click Here To Download The Resume" id="input_btn" ></i>
+        </section>
+        <!-- Resume Section End -->
+        <!-- Contact Section Start -->
+        <!-- Contact Section uses a table with the unordered list to structure the input elements and their label correctly-->
+        <section id="contact" class="contact">
+            <h3>Contact Us</h3>
+            <form action="">
+                <ul style="list-style: none;">
+                <table>
+                    <tr>
+                        <td><li><label for="">Full Name :</label></li></td>
+                        <td><li>
+                            <input type="text" id="input_text" placeholder="Name Here">
+                        </li></td>
+                    </tr>
+                    <tr>
+                        <td><li><label for="">Email :</label></li></td>
+                        <td><li>
+                            <input type="email" id="input_text" placeholder="Your Email Here">
+                        </li></td>
+                    </tr>
+                    <tr>
+                        <td><li><label for="">Message :</label></li></td>
+                        <td><li>
+                            <textarea name="message_area" id="text_area" cols="19" rows="10" placeholder="type here your message"></textarea>
+                        </li></td>
+                    </tr>
+                </table>
+                <input class="sub_btn" type="submit" name="" id="" value="SUBMIT">
+                </ul>
+            </form>
+        </section>
+        <!-- Contact Section End -->
+    </div>
+    <!-- footer Start -->
+<!-- Footer also uses table with the unordered list to structure its elements correctly -->
+    <footer>
+        <ul>
+            <table>
+                <tr>
+                    <td><li><i class="fa-solid fa-phone" ></i>&nbsp;+212134223423</li>
+                        <li><i class="fa-solid fa-location-dot" ></i>&nbsp;23 NaZRE fdar Rue RABAT, Maroc</li></td>
+                    <td> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6623.86496806447!2d-6.336749950639949!3d33.89139263138945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sma!4v1683337045929!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                </tr>
+                
+            </table>
+            
+        </ul>
+       <span class="copy">All rights reserved &copy Othmane Alaoui Moutarajji</span>
+    </footer>
+    <!-- Footer End -->
+    <!-- Thank You !!! -->
+
+</body>
+</html>
